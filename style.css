@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: #eee;
+     background-color: #20000c;
+  background-image: url("IMG/DEMON2YE.png"); /* ruta de la imagen */
+  background-repeat: no-repeat;           /* que no se repita */
+  background-attachment: fixed;           /* queda fija al scrollear */
+  background-position: center;            /* centrada */
+  background-size: cover;     
+}
+
+.nav{
+  position: sticky;
+  top:0;
+  backdrop-filter:blur(8px);
+  background:#752d2d;
+  border-bottom:1px solid rgba(255,255,255,0.06);
+}
+
+h1{
+   background:#2a0c2e;
+   padding: 24px 24px 24px 24px;
+   border-radius: 12px;
+   color: #eee;
+}
+
+.pt{
+   background:#741818;
+   padding: 24px 24px 24px 24px;
+   border-radius: 12px;
+}
+
+.inner{
+  display:flex;       
+  align-items:center;       
+  justify-content:space-between; 
+  padding:12px 0;   
+}
+
+.brand{
+  font-weight:800;
+  font-size:1.05rem;
+}
+
+.container{
+ width:min(1100px,92%);
+  margin:0 auto;     
+  padding:24px 0;
+}
+
+.nav a{
+  color:#eee;
+  text-decoration:none;
+  margin-left:14px;
+  padding:8px 12px;
+  border-radius:12px;
+  border:1px solid transparent;
+  transition:all .18s;
+}
+.nav a:hover{
+  color:#eee;
+  background: #388a6e;
+}
+
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ---- Sección de temporada ---- */
+.temporada {
+    background: #1c1c1c;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 0 15px rgba(255,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 24px 24px 24px 24px;
+}
+
+/* Efecto hover: brillo + aumento */
+.temporada:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 30px rgba(255,50,50,0.6);
+}
+
+.temporada img {
+    width: 100%;
+    max-width: 350px;
+    object-fit: cover;
+}
+
+.contenido {
+    padding: 20px;
+    flex: 1;
+}
+
+h2 {
+    color: #ff5555;
+    margin-top: 0;
+}
+
+.fecha {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.sinopsis {
+    margin-bottom: 15px;
+}
+
+/* ===== Episodios en 2 columnas ===== */
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    columns: 2;             /* ✅ dos columnas automáticas */
+    column-gap: 30px;       /* espacio entre columnas */
+}
+
+ul li {
+    margin-bottom: 5px;
+    break-inside: avoid;    /* evita cortes raros entre columnas */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: #aaa;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .temporada {
+        flex-direction: column;
+    }
+    .temporada img {
+        max-width: 100%;
+    }
+    /* En pantallas pequeñas vuelve a 1 columna */
+    ul {
+        columns: 1;
+    }
+}
+
+/* ---- Estilos extra para esta página ---- */
+    .grid-tres {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+      gap: 24px;
+      margin-top: 30px;
+    }
+    .tarjeta {
+      background:#1c1c1c;
+      border-radius:12px;
+      padding:20px;
+      box-shadow:0 0 15px rgba(255,0,0,0.2);
+      transition:transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .tarjeta:hover {
+      transform:scale(1.03);
+      box-shadow:0 0 30px rgba(255,50,50,0.6);
+    }
+    .tarjeta img {
+      width:100%;
+      border-radius:12px;
+      margin-bottom:15px;
+    }
+    .voz-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:20px;
+      margin-top:30px;
+    }
+    .voz-card {
+      background:#1c1c1c;
+      border-radius:12px;
+      padding:12px;
+      text-align:center;
+      box-shadow:0 0 10px rgba(255,0,0,0.15);
+      transition:transform .3s;
+    }
+    .voz-card:hover {transform:scale(1.05);}
+    .voz-card img {
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      border-radius:12px;
+      margin-bottom:10px;
+    }
