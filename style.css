@@ -1,4 +1,4 @@
-body {
+.body1 {
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
     color: #eee;
@@ -10,6 +10,13 @@ body {
   background-size: cover;     
 }
 
+body{
+  margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: #eee;
+     background-color: #1c0b27;
+}
+
 .nav{
   position: sticky;
   top:0;
@@ -19,7 +26,7 @@ body {
 }
 
 h1{
-   background:#2a0c2e;
+   background:#000000;
    padding: 24px 24px 24px 24px;
    border-radius: 12px;
    color: #eee;
@@ -128,14 +135,6 @@ ul li {
     break-inside: avoid;    /* evita cortes raros entre columnas */
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #111;
-    color: #aaa;
-    font-size: 0.9em;
-}
-
 @media (max-width: 768px) {
     .temporada {
         flex-direction: column;
@@ -148,7 +147,288 @@ footer {
         columns: 1;
     }
 }
+/* Fondo general  manga*/
+.body2 {
+    background-color: rgb(32, 0, 12);
+    background-image: url("IMG/1 sin título_20250924213657.png");
+    /* ruta de la imagen */
+    background-repeat: no-repeat;
+    /* que no se repita */
+    background-attachment: fixed;
+    /* queda fija al scrollear */
+    background-position: center;
+    /* centrada */
+    background-size: cover;
+    /* se ajusta al tamaño de pantalla */
+    font-family: 'Times New Roman', Times, serif;
+}
 
+/* Título principal */
+.h1titulaso {
+    background-color: rgb(118, 2, 56);
+    max-width: 1000px;
+    padding: 12px;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+/* Contenedor principal con flex */
+.ouyea {
+    background-color: rgb(255, 255, 255);
+    max-width: 1000px;
+    padding: 15px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px rgb(0, 0, 0);
+    flex-wrap: wrap;
+}
+
+/* Bloque de texto con los dos párrafos */
+.chacarrón {
+    flex: 2;
+    line-height: 1.6;
+    text-align: justify;
+    min-width: 300px;
+}
+
+/* Segundo párrafo destacado */
+.fnaf {
+    background-color: #fff8f8;
+    padding: 15px;
+    border-left: 4px solid #b30000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    margin-top: 15px;
+    color: #000000;
+}
+
+/* Tarjeta lateral */
+.card {
+    flex: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 320px;
+    min-width: 250px;
+}
+
+/* Encabezado de la tarjeta */
+.card-header {
+    background-color: #8a1c47;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 8px;
+    font-size: 16px;
+}
+
+/* Imagen */
+.card-image {
+    text-align: center;
+    background: #fafafa;
+}
+
+.card-image img {
+    width: 100%;
+    display: block;
+}
+
+.caption {
+    font-size: 12px;
+    color: #666;
+    margin: 6px 0;
+    font-style: italic;
+}
+
+/* Información de la tarjeta */
+.card-info {
+    padding: 12px;
+    background-color: #f7f7fb;
+}
+
+.card-info h3 {
+    background-color: #8a1c47;
+    color: white;
+    font-size: 14px;
+    margin: -12px -12px 10px -12px;
+    padding: 6px;
+    border-radius: 6px 6px 0 0;
+    text-align: center;
+}
+
+.card-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+}
+
+.card-info li {
+    margin: 6px 0;
+}
+
+.card-info strong {
+    color: #222;
+}
+
+.card-info em {
+    color: #c0508f;
+}
+
+.volumen-card {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 800px;
+    margin: 30px auto;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/*  Iluminación al pasar el mouse */
+.volumen-card:hover {
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+    transform: scale(1.02);
+}
+
+.portada {
+    flex: 1;
+    min-width: 250px;
+    background-color: #fdf0f5;
+    text-align: center;
+    padding: 20px;
+}
+
+.portada img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.portada h2 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #8a1c47;
+}
+
+.titulo-jp {
+    font-style: italic;
+    font-size: 14px;
+    color: #555;
+}
+
+.titulo-jp span {
+    color: #c0508f;
+}
+
+.capitulos {
+    flex: 2;
+    min-width: 300px;
+    padding: 20px;
+    background-color: #f7f7fb;
+}
+
+.capitulos h3 {
+    margin-bottom: 10px;
+    color: #8a1c47;
+    font-size: 18px;
+}
+
+.capitulos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.capitulos li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+/*  Hover en capítulos */
+.capitulos li:hover {
+    background-color: #ffe0f0;
+    color: #8a1c47;
+    font-weight: bold;
+    box-shadow: 0 0 8px rgba(138, 28, 71, 0.3);
+}
+
+.ES_MUZAN {
+    color: #8a1c47;
+}
+
+.volumenes-dos-columnas {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+}
+
+/* Estilo de cada ficha */
+.volumen-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.volumen-card:hover {
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+    transform: scale(1.03);
+}
+
+.BATIM {
+    color: #8a1c47;
+}
+
+.EA {
+    text-align: center;
+}
+
+h3 {
+    color: #8a1c47;
+}
+
+
+
+.footer {
+  width: 100%;                  
+  background-color: #8a1c47;    
+  color: #fff;
+  text-align: center;
+  padding: 12px 0;
+  margin-top: 40px;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.3);
+  font-size: 14px;
+} 
 /* ---- Estilos extra para esta página ---- */
     .grid-tres {
       display: grid;
